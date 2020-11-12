@@ -1,16 +1,9 @@
-# a='hello'
-# b='world'
-# c=$a$b
-# echo $c
-
-# cez args spravit
-
 if [ -z $1 ];
 then
 	echo " "
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-	echo "!!!! first args must be a version number etc 0.75 !!!!"
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!! first arg must be a version number eq. 1.36 !!!!"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 	echo " "
 else
 	version=$1
@@ -32,10 +25,10 @@ else
 	cp build/plugin/src/changelog.txt build/plugin/update/version/changelog-$version.txt
 	sed -i "s/version=\".*\">/version=\"$version\">/g" build/plugin/update/app.xml
 	echo " "
-	echo "****************************************************************"
-	echo "**** ZIP & changelog create to build/plugin/update/version/ ****"
-	echo "**** Please check this file: build/plugin/update/app.xml    ****"
-	echo "****                         build/plugin/src/version.py    ****"
-	echo "****************************************************************"
+	echo "*****************************************************************"
+	echo "**** ZIP & changelog created in build/plugin/update/version/ ****"
+	echo "**** Please check this files: build/plugin/update/app.xml    ****"
+	echo "****                          build/plugin/src/version.py    ****"
+	echo "*****************************************************************"
 	echo " "
 fi

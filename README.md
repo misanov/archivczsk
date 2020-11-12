@@ -2,6 +2,6 @@ archivczsk
 ==========
 enigma2 plugin pre prehravanie cz/sk video archivov
 
-**Info:** https://github.com/mx3L/archivczsk/releases
+**Info:** https://github.com/misanov/archivczsk/releases
 
-**Doplnky:** https://github.com/mx3L/archivczsk-doplnky
+**Doplnky:** https://github.com/misanov/archivczsk-doplnky
